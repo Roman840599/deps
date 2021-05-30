@@ -4,7 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 
 from custom_logging.custom_logging import CustomizeLogger
-from v1.routers import documents
+from API.v1.routers import documents
 
 
 logger = logging.getLogger(__name__)

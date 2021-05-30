@@ -1,12 +1,7 @@
 from datetime import datetime
-from sqlalchemy import Table, Column, Integer, String, DateTime, MetaData
-from sqlalchemy import create_engine
+from sqlalchemy import Table, Column, Integer, String, DateTime
+from .database import metadata
 
-from settings import SQLALCHEMY_DATABASE_URL
-
-
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
-metadata = MetaData()
 
 documents = Table('documents', metadata,
                   Column('id', Integer, primary_key=True, index=True),

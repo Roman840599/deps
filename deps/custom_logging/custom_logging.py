@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 from loguru import logger
-from settings import LOGGER
+from configs.log_config import LOGGER
 
 
 logging_format = "<level>{level: <8}</level> <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> request id:" \
